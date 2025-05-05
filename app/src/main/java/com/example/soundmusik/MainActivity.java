@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             FirebaseUser user = mAuth.getCurrentUser();
                             Log.d("FirebaseAuth", "Anonymous login successful: " + user.getUid());
+
                         } else {
                             Log.e("FirebaseAuth", "Anonymous login failed", task.getException());
                         }
